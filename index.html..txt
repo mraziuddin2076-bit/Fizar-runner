@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FIZAR Runner Pro</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial,sans-serif;
+}
+
+body{
+    overflow:hidden;
+    background:#87CEEB;
+}
+
+canvas{
+    display:block;
+}
+
+#ui{
+    position:absolute;
+    top:10px;
+    left:10px;
+    color:white;
+    font-size:22px;
+    font-weight:bold;
+    text-shadow:2px 2px 4px black;
+}
+
+#menu{
+    position:absolute;
+    inset:0;
+    background:rgba(0,0,0,0.8);
+    color:white;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+#menu h1{
+    font-size:60px;
+    margin-bottom:15px;
+}
+
+#menu p{
+    margin:10px;
+}
+
+button{
+    padding:12px 24px;
+    font-size:18px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    margin-top:10px;
+}
+
+#mobileJump{
+    position:absolute;
+    bottom:20px;
+    right:20px;
+    width:90px;
+    height:90px;
+    border-radius:50%;
+    background:#ff9800;
+    color:white;
+    font-size:24px;
+    border:none;
+}
+
+@media (min-width: 900px){
+    #mobileJump{
+        display:none;
+    }
+}
+</style>
+</head>
+<body>
+
+<div id="ui">
+Score: <span id="score">0</span><br>
+Coins: <span id="coins">0</span><br>
+High Score: <
